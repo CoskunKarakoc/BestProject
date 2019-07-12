@@ -19,7 +19,7 @@ namespace Best.DataAccess.Concrete.NHibernate
             _nHibernateHelper = nHibernateHelper;
         }
 
-        public List<ProductDetail> GetList()
+        public List<ProductDetail> GetListProductDetail()
         {
             using (var session = _nHibernateHelper.OpenSession())
             {

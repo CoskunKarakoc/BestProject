@@ -11,6 +11,6 @@ namespace Best.DataAccess.Abstract
 {
     public interface IProductDal:IEntityRepository<Product>
     {
-        List<ProductDetail> GetList();
+        List<ProductDetail> GetListProductDetail();
     }
 }

@@ -13,7 +13,7 @@ namespace Best.DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
-        public List<ProductDetail> GetList()
+        public List<ProductDetail> GetListProductDetail()
         {
             using (var context = new NorthwindContext())
             {
