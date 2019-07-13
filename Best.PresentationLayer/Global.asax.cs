@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Best.BusinessLayer.DependencyResolvers.Ninject;
+using Best.PresentationLayer.Utilities.Mvc.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +15,7 @@ namespace Best.PresentationLayer
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule()));
         }
     }
 }

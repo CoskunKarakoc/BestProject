@@ -1,4 +1,8 @@
-﻿using System.Reflection;
+﻿using Best.Core.Aspects.Postsharp.ExceptionAspects;
+using Best.Core.Aspects.Postsharp.LogAspects;
+using Best.Core.Aspects.Postsharp.PerformanceAspects;
+using Best.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,6 +17,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: LogAspect(typeof(FileLogger),AttributeTargetTypes = "Best.BusinessLayer.Concrete.Managers.*")]//Tüm metotlarda loglama işlemini yapabiliriz.
+[assembly: ExceptionLogAspect(typeof(FileLogger), AttributeTargetTypes = "Best.BusinessLayer.Concrete.Managers.*")]//Tüm metotlarda hata loglama işlemini yapabiliriz.
+//[assembly: PerformanceCounterAspect(AttributeTargetTypes = "Best.BusinessLayer.Concrete.Managers.*")]//Tüm metotlarda performans ölçümünü yapabiliriz.
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from

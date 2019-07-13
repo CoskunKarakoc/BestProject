@@ -31,7 +31,7 @@ namespace Best.Core.Aspects.Postsharp.CacheAspects
             _cacheManager = (ICacheManager)Activator.CreateInstance(_cachetype);
             base.RuntimeInitialize(method);
         }
-        public override void OnInvoke(MethodInterceptionArgs args)
+        public override void OnInvoke(MethodInterceptionArgs args)//Method'a girdiği anda cache bak.
         {
             var methodName = string.Format("{0}.{1}.{2}",
                 args.Method.ReflectedType.Namespace,//Namespace'in değerini aldım.
