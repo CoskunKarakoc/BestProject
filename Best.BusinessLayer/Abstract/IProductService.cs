@@ -14,5 +14,6 @@ namespace Best.BusinessLayer.Abstract
         Product AddProduct(Product product);
         void DeleteProduct(Product product);
         Product UpdateProduct(Product product);
+        void TransactionalOperation(Product product1,Product product2);
     }
 }

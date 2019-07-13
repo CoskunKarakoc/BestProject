@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Best.Core.Aspects.Postsharp
+namespace Best.Core.Aspects.Postsharp.ValidationAspects
 {
     /*Öncelikle Postsharp 4.2.17 exe dosyasını kuruyoruz
     daha sonra ManageNugetPackages'ten Postsharp dll'ini kuruyoruz */
