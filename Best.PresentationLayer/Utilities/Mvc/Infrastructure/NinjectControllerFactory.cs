@@ -17,6 +17,7 @@ namespace Best.PresentationLayer.Utilities.Mvc.Infrastructure
             _kernel = new StandardKernel(module);
         }
 
+
         protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
         {
             return controllerType == null ? null : (IController)_kernel.Get(controllerType);

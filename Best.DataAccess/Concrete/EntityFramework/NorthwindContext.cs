@@ -19,6 +19,9 @@ namespace Best.DataAccess.Concrete.EntityFramework
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
 
 
@@ -27,6 +30,8 @@ namespace Best.DataAccess.Concrete.EntityFramework
         {
             modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new CategoryMap());
+            modelBuilder.Configurations.Add(new UserMap());
+
             //Devamı bu şekilde eklenebilir
         }
 

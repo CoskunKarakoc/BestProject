@@ -23,7 +23,8 @@ namespace Best.BusinessLayer.DependencyResolvers.Ninject
             /*********İhtiyaca Göre Injection Rules*********/
             Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
-
+            Bind<IUserService>().To<UserManager>().InSingletonScope();
+            Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
             Bind<ICategoryDal>().To<EfCategoryDal>().InSingletonScope();
 
 
