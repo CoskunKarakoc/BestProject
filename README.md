@@ -1,3 +1,4 @@
+
 Her Asp.Net Mvc Projesinde Örnek Alınarak Geliştirme Yapılabilir.<b><i> Base bir Framework Yapısı</i></b>
 <p>************************************************************************************************</p>
 
@@ -35,3 +36,5 @@ Her Asp.Net Mvc Projesinde Örnek Alınarak Geliştirme Yapılabilir.<b><i> Base
   <li>Performance Counter AOP tekniği ile</li>
   <li>Security Yönetimi AOP tekniği ile</li>
 </ol>  
+ <img src="http://i.hurimg.com/i/hurriyet/75/750x422/5a549ab718c77425d86c99c7.jpg" alt="Developer Coding" />
+ <br/><br/>
